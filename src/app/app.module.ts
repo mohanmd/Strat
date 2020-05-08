@@ -8,10 +8,12 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { EditpopupPage } from './editpopup/editpopup.page';
+
 
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
+  declarations: [AppComponent,EditpopupPage],
+  entryComponents: [EditpopupPage],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),

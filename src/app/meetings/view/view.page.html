@@ -4,7 +4,7 @@
       <ion-back-button defaultHref="login"></ion-back-button>
     </ion-buttons>
     <ion-buttons slot="secondary">
-      <ion-button class="edit-btn">
+      <ion-button class="edit-btn" (click)="editpopup()">
         <ion-icon class="edit-icon" src="../../assets/icon/Edit.svg"  color="light" ></ion-icon>
       </ion-button>
       <ion-button (click)="goLogin()">

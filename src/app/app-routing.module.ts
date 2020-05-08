@@ -41,6 +41,10 @@ const routes: Routes = [
   {
     path: 'notes',
     loadChildren: () => import('./meetings/notes/notes.module').then( m => m.NotesPageModule)
+  },
+  {
+    path: 'editpopup',
+    loadChildren: () => import('./editpopup/editpopup.module').then( m => m.EditpopupPageModule)
   }
 
 
