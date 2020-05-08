@@ -1,0 +1,118 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="secondary">
+      <ion-button (click)="goLogin()">
+        <ion-icon class="logout" slot="icon-only"  src="../../assets/icon/initiative/Logout.svg" color="dark" size="small"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  <ion-title> <ion-img class="header-logo" src="../../assets/logo.png"></ion-img></ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="">
+    <ion-row >
+      <ion-col size="4" class=" ion-justify-content-center" (click)="goMeetings()">
+          <div>
+            <ion-icon src="../../assets/meeting.svg" ></ion-icon>
+            <ion-text><h5>Meeting Management</h5></ion-text>
+          </div>
+      </ion-col>
+      <ion-col size="4" class="  ion-justify-content-center">
+        <div class="bg_dark">
+          <ion-icon src="../../assets/icon/scoreboard.svg"  color="light"></ion-icon>
+          <ion-text><h5>Balanced Score Card</h5></ion-text>
+        </div>
+      </ion-col>
+      <ion-col size="4" class="ion-justify-content-center" >
+        <div > 
+          <ion-icon src="../../assets/icon/budget.svg" ></ion-icon>
+          <ion-text><h5>Budget Planning</h5></ion-text>
+        </div>
+      </ion-col>
+      
+      <ion-col size="4" class=" ion-justify-content-center"x>
+        <div class="bg_dark" > 
+          <ion-icon src="../../assets/icon/risk_management.svg" color="light"></ion-icon>
+          <ion-text><h5>Risk Management</h5></ion-text>
+        </div>
+      </ion-col>
+      <ion-col size="4"  class="ion-justify-content-center" >
+        <div  > 
+          <ion-icon src="../../assets/icon/employee-performance.svg"  ></ion-icon>
+          <ion-text><h5>Employee Performance</h5></ion-text>
+        </div>
+      </ion-col>
+      <ion-col size="4" class=" ion-justify-content-center" (click)="goInitiative()">
+        <div class="bg_dark" > 
+          <ion-icon src="../../assets/icon/initiative_management.svg"  color="light"></ion-icon>
+          <ion-text><h5>Initiatives Management</h5></ion-text>
+        </div>
+      </ion-col>
+      
+      <ion-col size="4" class="ion-justify-content-center" >
+        <div > 
+          <ion-icon src="../../assets/meeting.svg" ></ion-icon>
+          <ion-text><h5>PESTEl</h5></ion-text>
+        </div>
+      </ion-col>
+      <ion-col size="4" class=" ion-justify-content-center"  >
+        <div  class="bg_dark"> 
+          <ion-icon src="../../assets/meeting.svg" color="light" ></ion-icon>
+          <ion-text><h5>Strategy Formulation</h5></ion-text>
+        </div>
+      </ion-col>
+      <ion-col size="4" class="ion-justify-content-center">
+        <div > 
+          <ion-icon src="../../assets/meeting.svg"  ></ion-icon>
+          <ion-text><h5>Strategy Map</h5></ion-text>
+        </div>
+      </ion-col>
+      
+      <ion-col size="4" class=" ion-justify-content-center" >
+        <div class="bg_dark" > 
+          <ion-icon src="../../assets/meeting.svg" color="light"></ion-icon>
+          <ion-text><h5>SWOP</h5></ion-text>
+        </div>
+      </ion-col>
+      <ion-col size="4" class=" ion-justify-content-center" >
+        <div > 
+          <ion-icon src="../../assets/meeting.svg" ></ion-icon>
+          <ion-text><h5>Dashbords</h5></ion-text>
+        </div>
+      </ion-col>
+      <ion-col size="4" class=" ion-justify-content-center" >
+        <div class="bg_dark" > 
+          <ion-icon src="../../assets/meeting.svg" color="light" ></ion-icon>
+          <ion-text><h5>Charts</h5></ion-text>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer class="ion-no-border" translucent>
+  <ion-row >
+    <ion-col size="4" class="ion-no-padding bg_theme">
+      <ion-button expand="block" class="profile bg_theme">
+        <ion-icon name="person-outline" size="small" ></ion-icon> 
+      </ion-button>
+    </ion-col>
+    <ion-col  size="4" class="ion-no-padding bg_theme_green">
+      <ion-button class="notification bg_theme_green">
+        <ion-icon name="notifications-outline"  size="small"></ion-icon> 
+      </ion-button>
+    </ion-col>
+    <ion-col  size="4" class="ion-no-padding bg_theme">
+      <ion-button class="notification bg_theme">
+        <ion-icon name="settings-outline" size="small" ></ion-icon>
+      </ion-button>
+    </ion-col>
+    <!-- <ion-col  size="3" class="ion-no-padding">
+      <ion-button class="notification bg_theme_green">
+        <ion-icon name="notifications-outline"  size="small"></ion-icon> 
+      </ion-button>
+    </ion-col> -->
+  </ion-row>
+</ion-footer>

@@ -1,0 +1,150 @@
+<ion-header>
+  <ion-toolbar class="bg_theme initiative">
+    <ion-title>Initiative Description</ion-title>
+      <ion-buttons slot="end">
+          <ion-icon name="close-outline" (click)="dismiss()"></ion-icon>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-row >
+    <ion-col size="4">
+      <ion-item class="bg_input marg_bot_10" lines="none">
+        <ion-label position="stacked">ID</ion-label>
+        <ion-input  inputmode="text"></ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col size="8">
+        <ion-item class="bg_input marg_bot_10" lines="none">
+          <ion-label position="stacked">Name</ion-label>
+          <ion-input  inputmode="text"></ion-input>
+        </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-label position="stacked">Description</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+      <ion-item>
+        <ion-label>Owner</ion-label>
+        <ion-select multiple="true" cancelText="Nah" okText="Okay!">
+          <ion-select-option value="Option1">Option1</ion-select-option>
+          <ion-select-option value="Option2">Option2</ion-select-option>
+          <ion-select-option value="Option3">Option3</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="6">
+      <ion-item>
+        <ion-label>Planned Start Date /End DateMM DD YY</ion-label>
+        <ion-datetime displayFormat="MM DD YY"></ion-datetime>
+      </ion-item>
+    </ion-col>
+
+    <ion-col size="6">
+      <ion-item>
+        <ion-label> Actual Start Date /End DateMM DD YY</ion-label>
+        <ion-datetime displayFormat="MM DD YY" ></ion-datetime>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col>
+      <h3>Status</h3>
+    </ion-col>
+  </ion-row>
+  
+  <ion-list>
+    <ion-radio-group>
+      <ion-row>
+        <ion-col size="4" >
+          <ion-item lines="none">
+            <!--<ion-label>Biff</ion-label>-->
+            <ion-radio slot="start" value="biff">Complete</ion-radio>
+          </ion-item>
+        </ion-col>
+          
+        <ion-col size="4" >
+            <ion-item lines="none">
+                <!--<ion-label>Biff</ion-label>-->
+                <ion-radio slot="start" value="tecg"></ion-radio>
+            </ion-item>
+        </ion-col>
+
+        <ion-col size="4" >
+          <ion-item lines="none">
+            <!--<ion-label>Biff</ion-label>-->
+            <ion-radio slot="start" value="grif"></ion-radio>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    </ion-radio-group>
+  </ion-list>
+
+    <ion-row class="ion-align-items-end">
+      <ion-col size="6">
+        <ion-item>
+          <ion-label>Status</ion-label>
+          <ion-select multiple="true" cancelText="Nah" okText="Okay!">
+            <ion-select-option value="Manual">Manual</ion-select-option>
+            <ion-select-option value="weighted">weighted</ion-select-option>
+            <ion-select-option value="First">First</ion-select-option> <ion-select-option value="Option1">Manual</ion-select-option>
+            <ion-select-option value="second">second</ion-select-option>
+            <ion-select-option value="third">Third</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-item class="bg_input marg_bot_10" lines="none">
+          <ion-label position="stacked">Progerss %</ion-label>
+          <ion-input  inputmode="text"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <h3>Data Fields</h3>
+    <ion-row>
+        <ion-col size="3">
+          <ion-item lines="none">
+            <ion-label>Actual</ion-label>
+            <ion-checkbox checked="true"></ion-checkbox>
+          </ion-item>
+        </ion-col>
+
+        <ion-col size="3">
+          <ion-item lines="none">
+            <ion-label>Target</ion-label>
+            <ion-checkbox checked="true"></ion-checkbox>
+          </ion-item>
+        </ion-col>
+
+        <ion-col size="3">
+          <ion-item lines="none">
+            <ion-label>Budget</ion-label>
+            <ion-checkbox checked="true"></ion-checkbox>
+          </ion-item>
+        </ion-col>
+
+        <ion-col size="3">
+          <ion-item lines="none">
+            <ion-label>Forecast</ion-label>
+            <ion-checkbox checked="true"></ion-checkbox>
+          </ion-item>
+        </ion-col>
+    </ion-row>
+
+</ion-content>
